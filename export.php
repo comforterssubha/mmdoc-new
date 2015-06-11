@@ -5,6 +5,7 @@ error_reporting(E_ALL);
 //	$conn = mysql_connect($dbhost, $dbuname, $dbpass) OR DIE ("Not able to connect");
 //	mysql_select_db($dbname);
 	echo "Export Sync Start @".date("d.m.Y H:i:s")."\n";
+	echo "this was my first change";
 	
 	function mksync($table = "res_*", $table_from = "modoc_*", $hidefields = array(), $sayfields = false, $prefix = ""){
 		$tquery = mysql_query("TRUNCATE ".$table."");
